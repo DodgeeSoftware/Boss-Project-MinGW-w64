@@ -1,0 +1,292 @@
+#ifndef GAME_H
+#define GAME_H
+
+// C/C++ Includes
+#include <iostream>
+#include <map>
+#include <vector>
+#include <Time.h>
+#include <ctime>
+#include <cstring>
+
+// OpenGL FrameWork includes
+#include <glfw/glfw3.h>
+#include <glfw/glfw3native.h>
+
+// Lua
+extern "C"
+{
+    #include "lua.h"
+    #include "lualib.h"
+    #include "lauxlib.h"
+}
+
+// LuaBridge
+#include <LuaBridge/LuaBridge.h>
+
+// Game Includes
+#include "GameDrawing.h"
+#include "GameInput.h"
+#include "GameObjects.h"
+#include "GameTimers.h"
+#include "GameStates.h"
+#include "GameUtils.h"
+
+/** The Game class is the container for the entire application. It is based off a singleton
+    design pattern. **/
+class Game
+{
+    // ******************
+    // * FRIEND CLASSES *
+    // ******************
+    friend class DefaultGameState;
+    friend class BattleGameState;
+    friend class IntroGameState;
+    friend class MainMenuGameState;
+
+    // ******************************
+    // * CONSTRUCTORS / DESTRUCTORS *
+    // ******************************
+    /* NOTE: The Contructors/Destructors section is reponsible for creating and
+       destorying the game along with setting default parameters */
+    public:
+        //! Game Destructor
+        virtual ~Game() {}
+
+    protected:
+        //! Default Game Constructor
+        Game()
+        {
+            this->running = false;
+            //pScreen = NULL;
+            this->pGameState = 0;
+        }
+        ////! Game Copy constructor
+        //Game(const Game& other) {}
+
+    // ************************
+    // * OVERLOADED OPERATORS *
+    // ************************
+    public:
+        // Members and methods
+
+    protected:
+        // Members and methods
+
+    // ***********************
+    // * SINGLETON FUNCTIONS *
+    // ***********************
+    /* NOTE: This section is for our singleton functions. We
+        don't implement a destroy function here rather I clean up
+        the Game Class instance when the destructor is called*/
+    public:
+        //! Create or return a handle to the Game Instance
+        static Game* getInstance();
+
+    protected:
+        // The single instance of the game class
+        static Game* pInstance;
+
+    // ************
+    // * GAME RUN *
+    // ************
+    public:
+        //! Game Entry Point
+        virtual int run(int argc, char *argv[]);
+
+    // *************
+    // * GAME INIT *
+    // *************
+    /* NOTE: The Init section initialises each and every aspect of the framework */
+    public:
+        //! Initialise game engine
+        virtual bool init();
+        //! Initialise Window
+        virtual bool initWindow();
+        //! Initialise InputSystem
+        virtual bool initInputSystem();
+        //! Initialise AudioSystem
+        virtual bool initAudio();
+        //! Initialise TextSystem
+        virtual bool initText();
+
+    // ******************************
+    // * GAME ENGINE LOOP FUNCTIONS *
+    // ******************************
+    /* NOTE: These functions are called by the Game's main loop
+       and delegate responsibility to a state if one is in use */
+    public:
+        //! Poll for input and messages
+        virtual void handleEvents();
+        //! Logic for the game
+        virtual void think();
+        //! Update the game
+        virtual void update();
+        //! Draw the game
+        virtual void draw();
+        //! Draw the GUI
+        virtual void drawGUI();
+        //! Swap buffers
+        virtual void swapBuffers();
+
+    // **********************************
+    // * START / STOP/ RUNNING / PAUSED *
+    // **********************************
+    /* NOTE: The Start/Stop/Running/Paused section provides support for pausing, resuming, starting
+       and stopping the application */
+    public:
+        //! Start the Game
+        virtual void start();
+        //! Stop the Game
+        virtual void stop();
+        //! Pause the game
+        virtual void pause();
+        //! Resume the game
+        virtual void resume();
+        //! Is the game engine paused
+        virtual bool isPaused() { return this->paused; }
+        //! Get Paused flag for the game engine
+        virtual bool getPaused() { return this->paused; }
+        //! Set Paused flag for the game engine
+        virtual void setPaused(bool state) { this->paused = state; }
+        //! Is the game engine running
+        virtual bool isRunning() { return this->running; }
+        //! Get Game Engine Running
+        virtual bool getRunning() { return this->running; }
+        //! Set the running state
+        virtual void setRunning(bool running) { this->running = running; }
+
+    protected:
+        // Keep track of whether or not the game engine running
+        bool running;
+        // Keep track of whether or not the game engine is paused
+        bool paused;
+
+    // ***************
+    // * GAME STATES *
+    // ***************
+    /* NOTE: The GameStates section creates, changes and deletes GameStates
+       and keeps track of the state in use */
+    public:
+        //! Create all game states
+        virtual void createGameStates();
+        //! Change the current game state
+        virtual void changeGameState(const char* state);
+        ////! Change the current game state
+        //virtual void changeState(IGameState* pGameState);
+        //! Clean up all the game states
+        virtual void deleteGameStates();
+
+    protected:
+        //! Get GameState
+        virtual IGameState* getGameState() { return this->pGameState; }
+
+    protected:
+        // Pointer to the current game state
+        IGameState* pGameState;
+        // Keep track of all the game states
+        std::map<std::string, IGameState*> gameStateMap;
+
+    // *****************
+    // * GAME SHUTDOWN *
+    // *****************
+    /* NOTE: The Shutdown Section ends the applicaiton and shuts down each and every subsystem */
+    protected:
+        //! Shutdown the GameEngine
+        virtual void quit();
+        //! Shutdown InputSystem
+        virtual void shutdownInputSystem();
+        //! Shutdown Window
+        virtual void shutdownWindow();
+
+    // **********
+    // * WINDOW *
+    // **********
+    /* NOTE: The Window section is a collection of functions which act upon the window
+       such as window caption, minimising a window, restoring a window, setting fullscreen
+       or taking a screenshot */
+    protected:
+        // A pointer to the game window
+        GLFWwindow* pWindow;
+
+    // *********
+    // * INPUT *
+    // *********
+    /* NOTE: The input section exposes keyboard, mouse and gamepads */
+    public:
+        //! Get Input System
+        virtual InputSystem* getInputSystem() { return &(this->inputSystem); }
+
+    protected:
+        // Input System
+        InputSystem inputSystem;
+
+    // ****************
+    // * GAME DRAWING *
+    // ****************
+    /* NOTE: This exposes a handy opengl draw class */
+    public:
+        //! Get the OpenGLDrawing Class
+        virtual OpenGLDraw* getOpenGLDraw() { return OpenGLDraw::getInstance(); }
+
+    protected:
+        // Methods and members
+
+    // ****************
+    // * GAME OBJECTS *
+    // ****************
+    public:
+        // Global Asset Pool - Start
+        /*
+        Mix_Music* introMusic;
+        Mix_Music* battleMusic;
+        Mix_Music* menuMusic;
+        Mix_Music* victoryMusic;
+        TTF_Font* pFont;
+        Mix_Chunk* playerShootSound;
+        Mix_Chunk* bossHitSound;
+        Mix_Chunk* bossExplodeSound;
+        */
+        // Global Asset Pool - End
+
+        // Game Objects (World) - Start
+        /*
+
+        */
+        // Game Objects (World) - End
+    protected:
+        Player player;
+        float gravity;
+        float playerSpeed;
+        Boss boss;
+        std::vector<Bullet> bossBullets;
+        std::vector<Bullet> playerBullets;
+        lua_State* pBossScript;
+
+    // ********************
+    // * LUASTATE FACTORY *
+    // ********************
+    /* NOTE: We create the luaStates at engine singleton scope
+        to ensure that all engine objects can be bound to it.
+        The class which uses this lua state should clean it up */
+    public:
+        //! Makes a LuaState and binds engine objects to it
+        static lua_State* makeLuaState();
+
+    public:
+        //! Print text
+        virtual void print(const char* text)
+        {
+            std::cout << text << std::endl;
+        }
+
+    protected:
+        // Methods and members
+
+    //// *******************
+    //// * SCRIPT BINDINGS *
+    //// *******************
+    //static void bindToLua(lua_State* luaState);
+};
+
+#endif // GAME_H

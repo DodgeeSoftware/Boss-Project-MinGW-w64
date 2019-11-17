@@ -1,0 +1,33 @@
+#ifndef __BATTLEGAMESTATEBIND_H
+#define __BATTLEGAMESTATEBIND_H
+
+// C/C++ Includes
+#include <string>
+
+// Lua
+extern "C"
+{
+    #include "lua.h"
+    #include "lualib.h"
+    #include "lauxlib.h"
+}
+
+// LuaBridge
+#include <LuaBridge/LuaBridge.h>
+
+#include "BattleGameState.h"
+
+namespace LuaBinding
+{
+    static void BattleGameStateBind(lua_State* luaState)
+    {
+        luabridge::getGlobalNamespace(luaState)
+            .beginClass<BattleGameState>("BattleGameState")
+                .addConstructor <void (*)(Game*)>()
+                .addFunction("bossSpeak", (void(BattleGameState::*)(const char*))& BattleGameState::bossSpeak)
+                .addFunction("createBossBullet", (void(BattleGameState::*)(float x, float y, float xVel, float yVel))& BattleGameState::createBossBullet)
+            .endClass();
+    }
+}
+
+#endif // __BATTLEGAMESTATEBIND_H

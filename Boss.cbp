@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Boss" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw-w64" />
+		<Build>
+			<Target title="Debug">
+				<Option output="./Boss (Executable)/Bossd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="Boss (Executable)" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="mingw-w64" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="./Boss (Executable)/Boss" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="Boss (Executable)" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="mingw-w64" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="$(#glfw321.include)" />
+			<Add directory="$(#Lua510.include)" />
+			<Add directory="$(#LuaBridge.include)" />
+			<Add directory="Boss (Code)" />
+			<Add directory="Boss (Code)/Game" />
+			<Add directory="Boss (Code)/Game/GameCameras" />
+			<Add directory="Boss (Code)/Game/GameConfig" />
+			<Add directory="Boss (Code)/Game/GameDrawing" />
+			<Add directory="Boss (Code)/Game/GameInput" />
+			<Add directory="Boss (Code)/Game/GameLuaBindings" />
+			<Add directory="Boss (Code)/Game/GameObjects" />
+			<Add directory="Boss (Code)/Game/GamePhysics" />
+			<Add directory="Boss (Code)/Game/GameStates" />
+			<Add directory="Boss (Code)/Game/GameTimers" />
+			<Add directory="Boss (Code)/Game/GameUtils" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="glfw3" />
+			<Add library="gdi32" />
+			<Add library="Lua51" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add directory="$(#glfw321.lib)" />
+			<Add directory="$(#Lua510.lib)" />
+		</Linker>
+		<Unit filename="Boss (Code)/Game/Game.cpp" />
+		<Unit filename="Boss (Code)/Game/Game.h" />
+		<Unit filename="Boss (Code)/Game/GameCameras/Camera2D.cpp" />
+		<Unit filename="Boss (Code)/Game/GameCameras/Camera2D.h" />
+		<Unit filename="Boss (Code)/Game/GameCameras/Camera3D.cpp" />
+		<Unit filename="Boss (Code)/Game/GameCameras/Camera3D.h" />
+		<Unit filename="Boss (Code)/Game/GameCameras/ECameraModes.h" />
+		<Unit filename="Boss (Code)/Game/GameCameras/GameCameras.h" />
+		<Unit filename="Boss (Code)/Game/GameCameras/ICamera.h" />
+		<Unit filename="Boss (Code)/Game/GameConfig/GameConfig.cpp" />
+		<Unit filename="Boss (Code)/Game/GameConfig/GameConfig.h" />
+		<Unit filename="Boss (Code)/Game/GameDrawing/Colour.cpp" />
+		<Unit filename="Boss (Code)/Game/GameDrawing/Colour.h" />
+		<Unit filename="Boss (Code)/Game/GameDrawing/GameDrawing.h" />
+		<Unit filename="Boss (Code)/Game/GameDrawing/OpenGLDraw.cpp" />
+		<Unit filename="Boss (Code)/Game/GameDrawing/OpenGLDraw.h" />
+		<Unit filename="Boss (Code)/Game/GameInput/GameInput.h" />
+		<Unit filename="Boss (Code)/Game/GameInput/GamePad.cpp" />
+		<Unit filename="Boss (Code)/Game/GameInput/GamePad.h" />
+		<Unit filename="Boss (Code)/Game/GameInput/InputSystem.cpp" />
+		<Unit filename="Boss (Code)/Game/GameInput/InputSystem.h" />
+		<Unit filename="Boss (Code)/Game/GameInput/Keyboard.cpp" />
+		<Unit filename="Boss (Code)/Game/GameInput/Keyboard.h" />
+		<Unit filename="Boss (Code)/Game/GameInput/Mouse.cpp" />
+		<Unit filename="Boss (Code)/Game/GameInput/Mouse.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/BossBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/BulletBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/Camera2DBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/Camera3DBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/ColourBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/ConfigBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/FPSLimiterBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/FrameCounter.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/GameBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/GameLuaBindings.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/GameObjectBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/GamePadBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/InputSystemBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/KeyboardBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/MouseBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/OpenGLDrawBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/PhysicsBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/PlayerBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/StringUtilsBind.h" />
+		<Unit filename="Boss (Code)/Game/GameLuaBindings/TimerBind.h" />
+		<Unit filename="Boss (Code)/Game/GameObjects/Boss.cpp" />
+		<Unit filename="Boss (Code)/Game/GameObjects/Boss.h" />
+		<Unit filename="Boss (Code)/Game/GameObjects/Bullet.cpp" />
+		<Unit filename="Boss (Code)/Game/GameObjects/Bullet.h" />
+		<Unit filename="Boss (Code)/Game/GameObjects/GameObject.cpp" />
+		<Unit filename="Boss (Code)/Game/GameObjects/GameObject.h" />
+		<Unit filename="Boss (Code)/Game/GameObjects/GameObjects.h" />
+		<Unit filename="Boss (Code)/Game/GameObjects/Player.cpp" />
+		<Unit filename="Boss (Code)/Game/GameObjects/Player.h" />
+		<Unit filename="Boss (Code)/Game/GamePhysics/GamePhysics.h" />
+		<Unit filename="Boss (Code)/Game/GamePhysics/Physics.cpp" />
+		<Unit filename="Boss (Code)/Game/GamePhysics/Physics.h" />
+		<Unit filename="Boss (Code)/Game/GameStates/BattleGameState.cpp" />
+		<Unit filename="Boss (Code)/Game/GameStates/BattleGameState.h" />
+		<Unit filename="Boss (Code)/Game/GameStates/DefaultGameState.cpp" />
+		<Unit filename="Boss (Code)/Game/GameStates/DefaultGameState.h" />
+		<Unit filename="Boss (Code)/Game/GameStates/GameStates.h" />
+		<Unit filename="Boss (Code)/Game/GameStates/IGameState.h" />
+		<Unit filename="Boss (Code)/Game/GameStates/IntroGameState.cpp" />
+		<Unit filename="Boss (Code)/Game/GameStates/IntroGameState.h" />
+		<Unit filename="Boss (Code)/Game/GameStates/MainMenuGameState.cpp" />
+		<Unit filename="Boss (Code)/Game/GameStates/MainMenuGameState.h" />
+		<Unit filename="Boss (Code)/Game/GameTimers/FPSLimiter.cpp" />
+		<Unit filename="Boss (Code)/Game/GameTimers/FPSLimiter.h" />
+		<Unit filename="Boss (Code)/Game/GameTimers/FrameCounter.cpp" />
+		<Unit filename="Boss (Code)/Game/GameTimers/FrameCounter.h" />
+		<Unit filename="Boss (Code)/Game/GameTimers/GameTimers.h" />
+		<Unit filename="Boss (Code)/Game/GameTimers/Timer.cpp" />
+		<Unit filename="Boss (Code)/Game/GameTimers/Timer.h" />
+		<Unit filename="Boss (Code)/Game/GameUtils/GameUtils.h" />
+		<Unit filename="Boss (Code)/Game/GameUtils/StringUtils.cpp" />
+		<Unit filename="Boss (Code)/Game/GameUtils/StringUtils.h" />
+		<Unit filename="Boss (Code)/globals.h" />
+		<Unit filename="Boss (Code)/main.cpp" />
+		<Unit filename="Boss (Code)/readme.txt" />
+		<Unit filename="Boss (Code)/version.h" />
+		<Unit filename="Boss (Executable)/config.dat" />
+		<Unit filename="Boss (Executable)/media/bossScript.lua" />
+		<Unit filename="Boss (Executable)/media/playerScript.lua" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

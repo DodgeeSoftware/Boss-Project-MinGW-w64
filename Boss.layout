@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release" />
+	<File name="Boss (Code)\Game\GameDrawing\OpenGLDraw.h" open="0" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9140" topLine="162" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\OpenGLDrawBind.h" open="1" top="0" tabpos="53" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="401" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\BattleGameState.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2976" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameDrawing\GameDrawing.h" open="0" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\GameBind.h" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1094" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\Player.cpp" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="515" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameCameras\ECameraModes.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="263" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\BulletBind.h" open="1" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="50" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\Boss.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="336" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\InputSystem.cpp" open="1" top="0" tabpos="45" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2943" topLine="80" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\KeyboardBind.h" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="627" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameDrawing\Colour.cpp" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3340" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\FPSLimiterBind.h" open="1" top="0" tabpos="56" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="237" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameCameras\Camera3D.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4583" topLine="161" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\Mouse.h" open="1" top="0" tabpos="49" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2061" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="Boss (Executable)\config.dat" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\GamePad.cpp" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="31988" topLine="1093" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameConfig\GameConfig.cpp" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1796" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameTimers\FrameCounter.cpp" open="0" top="0" tabpos="54" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1125" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\Boss.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="490" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameCameras\Camera2D.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5315" topLine="194" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\IntroGameState.cpp" open="1" top="0" tabpos="37" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1968" topLine="68" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\version.h" open="1" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\MouseBind.h" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1065" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\BattleGameState.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3253" topLine="42" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameUtils\GameUtils.h" open="0" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="44" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\FrameCounter.h" open="1" top="0" tabpos="55" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="247" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\GameObjects.h" open="0" top="0" tabpos="31" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="72" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameTimers\FPSLimiter.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1950" topLine="36" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\BossBind.h" open="1" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2500" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\TimerBind.h" open="1" top="0" tabpos="50" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="237" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\IGameState.h" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2929" topLine="47" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\GamePad.h" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13035" topLine="330" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\main.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="96" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\InputSystemBind.h" open="1" top="0" tabpos="54" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="429" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GamePhysics\Physics.h" open="0" top="0" tabpos="33" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="260" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameConfig\GameConfig.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameTimers\Timer.cpp" open="0" top="0" tabpos="55" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3266" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\ConfigBind.h" open="1" top="1" tabpos="32" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="326" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\GameObject.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3489" topLine="124" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameCameras\Camera2D.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8106" topLine="219" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\MainMenuGameState.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1206" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\Mouse.cpp" open="1" top="0" tabpos="48" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13040" topLine="388" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\StringUtilsBind.h" open="1" top="0" tabpos="51" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="763" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\DefaultGameState.h" open="1" top="0" tabpos="44" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1346" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\GameInput.h" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\GamePadBind.h" open="1" top="0" tabpos="31" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="583" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GamePhysics\GamePhysics.h" open="0" top="0" tabpos="32" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="84" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameCameras\ICamera.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="319" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\ColourBind.h" open="1" top="0" tabpos="33" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1153" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\Bullet.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="887" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\Game.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15550" topLine="402" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\Keyboard.h" open="1" top="0" tabpos="47" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1018" topLine="28" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\readme.txt" open="1" top="0" tabpos="43" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4259" topLine="82" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\PhysicsBind.h" open="1" top="0" tabpos="52" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="401" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameDrawing\OpenGLDraw.cpp" open="0" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23739" topLine="657" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameTimers\Timer.h" open="0" top="0" tabpos="51" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3544" topLine="63" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\GameLuaBindings.h" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="504" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameCameras\GameCameras.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="170" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameTimers\FPSLimiter.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="534" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\Camera2DBind.h" open="1" top="0" tabpos="41" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2453" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="Boss (Executable)\media\playerScript.lua" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1333" topLine="19" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\Game.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="58932" topLine="1669" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\GameStates.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="193" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\InputSystem.h" open="0" top="0" tabpos="66" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5791" topLine="75" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\globals.h" open="1" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="57" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GamePhysics\Physics.cpp" open="0" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1478" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameDrawing\Colour.h" open="0" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4163" topLine="102" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameTimers\GameTimers.h" open="0" top="0" tabpos="53" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\GameObject.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="397" topLine="8" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameCameras\Camera3D.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10197" topLine="261" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\MainMenuGameState.cpp" open="1" top="0" tabpos="36" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1274" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="Boss (Executable)\media\bossScript.lua" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="788" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\PlayerBind.h" open="1" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1984" topLine="10" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\DefaultGameState.cpp" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="437" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameUtils\StringUtils.h" open="0" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7595" topLine="183" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\GameObjectBind.h" open="1" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1168" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\Player.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="307" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameTimers\FrameCounter.h" open="0" top="0" tabpos="52" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1851" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameLuaBindings\Camera3DBind.h" open="1" top="0" tabpos="42" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2261" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameObjects\Bullet.cpp" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="163" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameStates\IntroGameState.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="629" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="Boss (Code)\Game\GameInput\Keyboard.cpp" open="1" top="0" tabpos="46" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1107" topLine="15" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

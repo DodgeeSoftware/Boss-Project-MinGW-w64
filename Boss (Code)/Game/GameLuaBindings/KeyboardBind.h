@@ -1,0 +1,295 @@
+#ifndef __KEYBOARDBIND_H
+#define __KEYBOARDBIND_H
+
+// C/C++ Includes
+#include <string>
+
+// Lua
+extern "C"
+{
+    #include "lua.h"
+    #include "lualib.h"
+    #include "lauxlib.h"
+}
+
+// LuaBridge
+#include <LuaBridge/LuaBridge.h>
+
+// GamePad
+#include "Keyboard.h"
+
+namespace LuaBinding
+{
+    static void KeyboardBind(lua_State* pLuaState)
+    {
+        luabridge::getGlobalNamespace(pLuaState)
+            // Keyboard Class
+            .beginClass<Keyboard>("Keyboard")
+                // TODO: Implement me
+                .addConstructor <void (*)(void)>()
+                .addFunction("isKeyPressed", (bool (Keyboard::*)(int)) &Keyboard::isKeyPressed)
+                .addFunction("isKeyToggled", (bool (Keyboard::*)(int)) &Keyboard::isKeyToggled)
+            .endClass();
+        // Globals
+        luabridge::push(pLuaState, -1);
+        lua_setglobal(pLuaState, "GLFW_KEY_UNKNOWN");
+        luabridge::push(pLuaState, 32);
+        lua_setglobal(pLuaState, "GLFW_KEY_SPACE");
+        luabridge::push(pLuaState, 39);
+        lua_setglobal(pLuaState, "GLFW_KEY_APOSTROPHE");
+        luabridge::push(pLuaState, 44);
+        lua_setglobal(pLuaState, "GLFW_KEY_COMMA");
+        luabridge::push(pLuaState, 45);
+        lua_setglobal(pLuaState, "GLFW_KEY_MINUS");
+        luabridge::push(pLuaState, 46);
+        lua_setglobal(pLuaState, "GLFW_KEY_PERIOD");
+        luabridge::push(pLuaState, 47);
+        lua_setglobal(pLuaState, "GLFW_KEY_SLASH");
+        luabridge::push(pLuaState, 48);
+        lua_setglobal(pLuaState, "GLFW_KEY_0");
+        luabridge::push(pLuaState, 49);
+        lua_setglobal(pLuaState, "GLFW_KEY_1");
+        luabridge::push(pLuaState, 50);
+        lua_setglobal(pLuaState, "GLFW_KEY_2");
+        luabridge::push(pLuaState, 51);
+        lua_setglobal(pLuaState, "GLFW_KEY_3");
+        luabridge::push(pLuaState, 52);
+        lua_setglobal(pLuaState, "GLFW_KEY_4");
+        luabridge::push(pLuaState, 53);
+        lua_setglobal(pLuaState, "GLFW_KEY_5");
+        luabridge::push(pLuaState, 54);
+        lua_setglobal(pLuaState, "GLFW_KEY_6");
+        luabridge::push(pLuaState, 55);
+        lua_setglobal(pLuaState, "GLFW_KEY_7");
+        luabridge::push(pLuaState, 56);
+        lua_setglobal(pLuaState, "GLFW_KEY_8");
+        luabridge::push(pLuaState, 57);
+        lua_setglobal(pLuaState, "GLFW_KEY_9");
+        luabridge::push(pLuaState, 59);
+        lua_setglobal(pLuaState, "GLFW_KEY_SEMICOLON");
+        luabridge::push(pLuaState, 61);
+        lua_setglobal(pLuaState, "GLFW_KEY_EQUAL");
+        luabridge::push(pLuaState, 65);
+        lua_setglobal(pLuaState, "GLFW_KEY_A");
+        luabridge::push(pLuaState, 66);
+        lua_setglobal(pLuaState, "GLFW_KEY_B");
+        luabridge::push(pLuaState, 67);
+        lua_setglobal(pLuaState, "GLFW_KEY_C");
+        luabridge::push(pLuaState, 68);
+        lua_setglobal(pLuaState, "GLFW_KEY_D");
+        luabridge::push(pLuaState, 69);
+        lua_setglobal(pLuaState, "GLFW_KEY_E");
+        luabridge::push(pLuaState, 70);
+        lua_setglobal(pLuaState, "GLFW_KEY_F");
+        luabridge::push(pLuaState, 71);
+        lua_setglobal(pLuaState, "GLFW_KEY_G");
+        luabridge::push(pLuaState, 72);
+        lua_setglobal(pLuaState, "GLFW_KEY_H");
+        luabridge::push(pLuaState, 73);
+        lua_setglobal(pLuaState, "GLFW_KEY_I");
+        luabridge::push(pLuaState, 74);
+        lua_setglobal(pLuaState, "GLFW_KEY_J");
+        luabridge::push(pLuaState, 75);
+        lua_setglobal(pLuaState, "GLFW_KEY_K");
+        luabridge::push(pLuaState, 76);
+        lua_setglobal(pLuaState, "GLFW_KEY_L");
+        luabridge::push(pLuaState, 77);
+        lua_setglobal(pLuaState, "GLFW_KEY_M");
+        luabridge::push(pLuaState, 78);
+        lua_setglobal(pLuaState, "GLFW_KEY_N");
+        luabridge::push(pLuaState, 79);
+        lua_setglobal(pLuaState, "GLFW_KEY_O");
+        luabridge::push(pLuaState, 80);
+        lua_setglobal(pLuaState, "GLFW_KEY_P");
+        luabridge::push(pLuaState, 81);
+        lua_setglobal(pLuaState, "GLFW_KEY_Q");
+        luabridge::push(pLuaState, 82);
+        lua_setglobal(pLuaState, "GLFW_KEY_R");
+        luabridge::push(pLuaState, 83);
+        lua_setglobal(pLuaState, "GLFW_KEY_S");
+        luabridge::push(pLuaState, 84);
+        lua_setglobal(pLuaState, "GLFW_KEY_T");
+        luabridge::push(pLuaState, 85);
+        lua_setglobal(pLuaState, "GLFW_KEY_U");
+        luabridge::push(pLuaState, 86);
+        lua_setglobal(pLuaState, "GLFW_KEY_V");
+        luabridge::push(pLuaState, 87);
+        lua_setglobal(pLuaState, "GLFW_KEY_W");
+        luabridge::push(pLuaState, 88);
+        lua_setglobal(pLuaState, "GLFW_KEY_X");
+        luabridge::push(pLuaState, 89);
+        lua_setglobal(pLuaState, "GLFW_KEY_Y");
+        luabridge::push(pLuaState, 90);
+        lua_setglobal(pLuaState, "GLFW_KEY_Z");
+        luabridge::push(pLuaState, 91);
+        lua_setglobal(pLuaState, "GLFW_KEY_LEFT_BRACKET");
+        luabridge::push(pLuaState, 92);
+        lua_setglobal(pLuaState, "GLFW_KEY_BACKSLASH");
+        luabridge::push(pLuaState, 93);
+        lua_setglobal(pLuaState, "GLFW_KEY_RIGHT_BRACKET");
+        luabridge::push(pLuaState, 96);
+        lua_setglobal(pLuaState, "GLFW_KEY_GRAVE_ACCENT");
+        luabridge::push(pLuaState, 161);
+        lua_setglobal(pLuaState, "GLFW_KEY_WORLD_1");
+        luabridge::push(pLuaState, 162);
+        lua_setglobal(pLuaState, "GLFW_KEY_WORLD_2");
+        luabridge::push(pLuaState, 256);
+        lua_setglobal(pLuaState, "GLFW_KEY_ESCAPE");
+        luabridge::push(pLuaState, 257);
+        lua_setglobal(pLuaState, "GLFW_KEY_ENTER");
+        luabridge::push(pLuaState, 258);
+        lua_setglobal(pLuaState, "GLFW_KEY_TAB");
+        luabridge::push(pLuaState, 259);
+        lua_setglobal(pLuaState, "GLFW_KEY_BACKSPACE");
+        luabridge::push(pLuaState, 260);
+        lua_setglobal(pLuaState, "GLFW_KEY_INSERT");
+        luabridge::push(pLuaState, 261);
+        lua_setglobal(pLuaState, "GLFW_KEY_DELETE");
+        luabridge::push(pLuaState, 262);
+        lua_setglobal(pLuaState, "GLFW_KEY_RIGHT");
+        luabridge::push(pLuaState, 263);
+        lua_setglobal(pLuaState, "GLFW_KEY_LEFT");
+        luabridge::push(pLuaState, 264);
+        lua_setglobal(pLuaState, "GLFW_KEY_DOWN");
+        luabridge::push(pLuaState, 265);
+        lua_setglobal(pLuaState, "GLFW_KEY_UP");
+        luabridge::push(pLuaState, 266);
+        lua_setglobal(pLuaState, "GLFW_KEY_PAGE_UP");
+        luabridge::push(pLuaState, 267);
+        lua_setglobal(pLuaState, "GLFW_KEY_PAGE_DOWN");
+        luabridge::push(pLuaState, 268);
+        lua_setglobal(pLuaState, "GLFW_KEY_HOME");
+        luabridge::push(pLuaState, 269);
+        lua_setglobal(pLuaState, "GLFW_KEY_END");
+        luabridge::push(pLuaState, 280);
+        lua_setglobal(pLuaState, "GLFW_KEY_CAPS_LOCK");
+        luabridge::push(pLuaState, 281);
+        lua_setglobal(pLuaState, "GLFW_KEY_SCROLL_LOCK");
+        luabridge::push(pLuaState, 282);
+        lua_setglobal(pLuaState, "GLFW_KEY_NUM_LOCK");
+        luabridge::push(pLuaState, 283);
+        lua_setglobal(pLuaState, "GLFW_KEY_PRINT_SCREEN");
+        luabridge::push(pLuaState, 284);
+        lua_setglobal(pLuaState, "GLFW_KEY_PAUSE");
+        luabridge::push(pLuaState, 290);
+        lua_setglobal(pLuaState, "GLFW_KEY_F1");
+        luabridge::push(pLuaState, 291);
+        lua_setglobal(pLuaState, "GLFW_KEY_F2");
+        luabridge::push(pLuaState, 292);
+        lua_setglobal(pLuaState, "GLFW_KEY_F3");
+        luabridge::push(pLuaState, 293);
+        lua_setglobal(pLuaState, "GLFW_KEY_F4");
+        luabridge::push(pLuaState, 294);
+        lua_setglobal(pLuaState, "GLFW_KEY_F5");
+        luabridge::push(pLuaState, 295);
+        lua_setglobal(pLuaState, "GLFW_KEY_F6");
+        luabridge::push(pLuaState, 296);
+        lua_setglobal(pLuaState, "GLFW_KEY_F7");
+        luabridge::push(pLuaState, 297);
+        lua_setglobal(pLuaState, "GLFW_KEY_F8");
+        luabridge::push(pLuaState, 298);
+        lua_setglobal(pLuaState, "GLFW_KEY_F9");
+        luabridge::push(pLuaState, 299);
+        lua_setglobal(pLuaState, "GLFW_KEY_F10");
+        luabridge::push(pLuaState, 300);
+        lua_setglobal(pLuaState, "GLFW_KEY_F11");
+        luabridge::push(pLuaState, 301);
+        lua_setglobal(pLuaState, "GLFW_KEY_F12");
+        luabridge::push(pLuaState, 302);
+        lua_setglobal(pLuaState, "GLFW_KEY_F13");
+        luabridge::push(pLuaState, 303);
+        lua_setglobal(pLuaState, "GLFW_KEY_F14");
+        luabridge::push(pLuaState, 304);
+        lua_setglobal(pLuaState, "GLFW_KEY_F15");
+        luabridge::push(pLuaState, 305);
+        lua_setglobal(pLuaState, "GLFW_KEY_F16");
+        luabridge::push(pLuaState, 306);
+        lua_setglobal(pLuaState, "GLFW_KEY_F17");
+        luabridge::push(pLuaState, 307);
+        lua_setglobal(pLuaState, "GLFW_KEY_F18");
+        luabridge::push(pLuaState, 308);
+        lua_setglobal(pLuaState, "GLFW_KEY_F19");
+        luabridge::push(pLuaState, 309);
+        lua_setglobal(pLuaState, "GLFW_KEY_F20");
+        luabridge::push(pLuaState, 310);
+        lua_setglobal(pLuaState, "GLFW_KEY_F21");
+        luabridge::push(pLuaState, 311);
+        lua_setglobal(pLuaState, "GLFW_KEY_F22");
+        luabridge::push(pLuaState, 312);
+        lua_setglobal(pLuaState, "GLFW_KEY_F23");
+        luabridge::push(pLuaState, 313);
+        lua_setglobal(pLuaState, "GLFW_KEY_F24");
+        luabridge::push(pLuaState, 314);
+        lua_setglobal(pLuaState, "GLFW_KEY_F25");
+        luabridge::push(pLuaState, 320);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_0");
+        luabridge::push(pLuaState, 321);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_1");
+        luabridge::push(pLuaState, 322);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_2");
+        luabridge::push(pLuaState, 323);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_3");
+        luabridge::push(pLuaState, 324);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_4");
+        luabridge::push(pLuaState, 325);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_5");
+        luabridge::push(pLuaState, 326);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_6");
+        luabridge::push(pLuaState, 327);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_7");
+        luabridge::push(pLuaState, 328);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_8");
+        luabridge::push(pLuaState, 329);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_9");
+        luabridge::push(pLuaState, 330);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_DECIMAL");
+        luabridge::push(pLuaState, 331);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_DIVIDE");
+        luabridge::push(pLuaState, 332);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_MULTIPLY");
+        luabridge::push(pLuaState, 333);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_SUBTRACT");
+        luabridge::push(pLuaState, 334);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_ADD");
+        luabridge::push(pLuaState, 335);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_ENTER");
+        luabridge::push(pLuaState, 336);
+        lua_setglobal(pLuaState, "GLFW_KEY_KP_EQUAL");
+        luabridge::push(pLuaState, 340);
+        lua_setglobal(pLuaState, "GLFW_KEY_LEFT_SHIFT");
+        luabridge::push(pLuaState, 341);
+        lua_setglobal(pLuaState, "GLFW_KEY_LEFT_CONTROL");
+        luabridge::push(pLuaState, 342);
+        lua_setglobal(pLuaState, "GLFW_KEY_LEFT_ALT");
+        luabridge::push(pLuaState, 343);
+        lua_setglobal(pLuaState, "GLFW_KEY_LEFT_SUPER");
+        luabridge::push(pLuaState, 344);
+        lua_setglobal(pLuaState, "GLFW_KEY_RIGHT_SHIFT");
+        luabridge::push(pLuaState, 345);
+        lua_setglobal(pLuaState, "GLFW_KEY_RIGHT_CONTROL");
+        luabridge::push(pLuaState, 346);
+        lua_setglobal(pLuaState, "GLFW_KEY_RIGHT_ALT");
+        luabridge::push(pLuaState, 347);
+        lua_setglobal(pLuaState, "GLFW_KEY_RIGHT_SUPER");
+        luabridge::push(pLuaState, 348);
+        lua_setglobal(pLuaState, "GLFW_KEY_MENU");
+        luabridge::push(pLuaState, GLFW_KEY_MENU);
+        lua_setglobal(pLuaState, "GLFW_KEY_MENU");
+        luabridge::push(pLuaState, 0x1);
+        lua_setglobal(pLuaState, "GLFW_MOD_SHIFT");
+        luabridge::push(pLuaState, 0x2);
+        lua_setglobal(pLuaState, "GLFW_MOD_CONTROL");
+        luabridge::push(pLuaState, 0x4);
+        lua_setglobal(pLuaState, "GLFW_MOD_ALT");
+        luabridge::push(pLuaState, 0x8);
+        lua_setglobal(pLuaState, "GLFW_MOD_ALT");
+        luabridge::push(pLuaState, 0);
+        lua_setglobal(pLuaState, "GLFW_RELEASE");
+        luabridge::push(pLuaState, 1);
+        lua_setglobal(pLuaState, "GLFW_PRESS");
+        luabridge::push(pLuaState, 2);
+        lua_setglobal(pLuaState, "GLFW_REPEAT");
+    }
+}
+
+#endif // __KEYBOARDBIND_H
